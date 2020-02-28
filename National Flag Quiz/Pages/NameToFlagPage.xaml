@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="National_Flag_Quiz.NameToFlagPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:National_Flag_Quiz"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="imgFlag1" HorizontalAlignment="Center" Height="200" Margin="-450,0,0,0" VerticalAlignment="Center" Width="400" Tapped="imgFlag_Tapped"/>
+        <Image x:Name="imgFlag2" HorizontalAlignment="Center" Height="200" Margin="450,0,0,0" VerticalAlignment="Center" Width="400" Tapped="imgFlag_Tapped"/>
+        <Image x:Name="imgFlag3" HorizontalAlignment="Center" Height="200" Margin="-450,500,0,0" VerticalAlignment="Center" Width="400" Tapped="imgFlag_Tapped"/>
+        <Image x:Name="imgFlag4" HorizontalAlignment="Center" Height="200" Margin="450,500,0,0" VerticalAlignment="Center" Width="400" Tapped="imgFlag_Tapped"/>
+        <TextBlock x:Name="txtCorrect" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Correct: 0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txtWrong" HorizontalAlignment="Left" Margin="10,39,0,0" TextWrapping="Wrap" Text="Wrong: 0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txtScore" HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" Text="Score: 0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txtFlags" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="Flags: 0/0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="txtTime" HorizontalAlignment="Center" Height="50" Margin="0,100,0,0" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="850" TextAlignment="Center" FontSize="48"/>
+        <TextBlock x:Name="txtCountry" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Country" VerticalAlignment="Top" FontSize="72"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Right" Margin="10,0,0,10" VerticalAlignment="Top" Width="128" Height="64" Tapped="btnBack_Tapped"/>
+        <Button x:Name="btnRetry" Content="Retry" HorizontalAlignment="Right" VerticalAlignment="Top" Width="128" Height="64" Margin="0,64,0,0" Tapped="btnRetry_Tapped"/>
+    </Grid>
+</Page>

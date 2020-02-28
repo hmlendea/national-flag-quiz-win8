@@ -1,0 +1,23 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:National_Flag_Quiz"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+    x:Class="National_Flag_Quiz.ScorePage"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Game Finished!" VerticalAlignment="Top" FontSize="72"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,384,128" TextWrapping="Wrap" Text="Correct:" VerticalAlignment="Center" FontSize="48" Width="256" Height="64"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,384,0" TextWrapping="Wrap" Text="Wrong:" VerticalAlignment="Center" FontSize="48" Width="256" Height="64"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,128,384,0" TextWrapping="Wrap" Text="Score:" VerticalAlignment="Center" FontSize="48" Width="256" Height="64"/>
+        <TextBlock x:Name="txtCorrect" HorizontalAlignment="Center" Margin="384,0,0,128" TextWrapping="Wrap" Text="3 x 0 = 0" VerticalAlignment="Center" FontSize="48" Width="256" Height="64" TextAlignment="Right"/>
+        <TextBlock x:Name="txtWrong" HorizontalAlignment="Center" Margin="384,0,0,0" TextWrapping="Wrap" Text="-2 x 0 = 0" VerticalAlignment="Center" FontSize="48" Width="256" Height="64" TextAlignment="Right"/>
+        <TextBlock x:Name="txtScore" HorizontalAlignment="Center" Margin="384,128,0,0" TextWrapping="Wrap" Text="0 - 0 = 0" VerticalAlignment="Center" FontSize="48" Width="256" Height="64" TextAlignment="Right"/>
+        <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Center" Height="64" Margin="0,384,0,0" VerticalAlignment="Center" Width="256" Click="btnOk_Click" FontSize="36"/>
+        <UI:AdControl ApplicationId="d25517cb-12d4-4699-8bdc-52040c712cab" AdUnitId="10043104" HorizontalAlignment="Left" Height="512" Margin="0" VerticalAlignment="Center" Width="256"/>
+        <UI:AdControl ApplicationId="d25517cb-12d4-4699-8bdc-52040c712cab" AdUnitId="10043104" HorizontalAlignment="Right" Height="512" Margin="0" VerticalAlignment="Center" Width="256"/>
+    </Grid>
+</Page>

@@ -1,0 +1,22 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:National_Flag_Quiz"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+    x:Class="National_Flag_Quiz.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="btnPlay" Content="Name to Flag" HorizontalAlignment="Center" Margin="0,0,0,256" VerticalAlignment="Center" Height="64" Width="256" FontSize="36" Click="btnPlay_Click"/>
+        <Button Content="Flag to Name" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Height="64" Width="256" FontSize="36" RenderTransformOrigin="0.535,-0.562"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Center" Height="64" Width="256" FontSize="36" Tapped="btnExit_Tapped"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="National Flag Quiz" VerticalAlignment="Top" FontSize="72"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,-0.7,-0.8" TextWrapping="Wrap" Text="by Mlendea Horatiu" VerticalAlignment="Bottom" FontSize="16"/>
+
+        <UI:AdControl ApplicationId="d25517cb-12d4-4699-8bdc-52040c712cab" AdUnitId="10043104" HorizontalAlignment="Left" Width="256" Margin="0" Height="512" VerticalAlignment="Center"/>
+        <UI:AdControl ApplicationId="d25517cb-12d4-4699-8bdc-52040c712cab" AdUnitId="10043104" HorizontalAlignment="Right" Width="256" Margin="0" Height="512" VerticalAlignment="Center"/>
+
+    </Grid>
+</Page>
